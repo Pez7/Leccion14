@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario de datos</title>
+    </head>
+  <body background= "fondo.png">
+    <font color="teal" face="Sensations and Qualities" size="6">
+    <h1>Ingresa Tus datos</h1></font>
+    <form>
+      <p>
+        <font color="teal" size="4">
+        <label for="">Nombre completo:</label><br>
+        <input type="text" title= "ej: Antonio Contreras" required>
+      </p>
+      <p>
+        <label for="">Teléfono</label><br>
+        <input type="tel" name="telefono" pattern="[0-9]{9}" title="el número debe contener 9 dígitos" required>
+      </p>
+      <p>
+        <label for="">Email:</label><br>
+        <input type="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" title= "ej: esmivida@itsmylife.com" required>
+      </p>
+      <p>
+        <label for="pw">Contraseña:</label><br>
+        <input type="password" name="pw" pattern=".{6,}" title="6 o más carácteres" required>
+      </p>
+      <p>
+        <label for="">Escoge tu libro favorito</label>
+        <select>
+        <option>Selecciona</option>
+        <option>El pequeño principe</option>
+        <option>La mandarina mecánica</option>
+        <option>Harry Pot</option>
+        <option>1894</option>
+      </select>
+      </p>
+      </font>
+      <p>
+        <input type="submit" name="" value="Enviar">
+      </p>
+     
+    </form>
+<script src="assets/js/javascript.js"></script>
+  </body>
+</html>
